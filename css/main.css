@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Rajdhani:wght@300&display=swap');
+html{
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  html{
+      align-items: center;
+  }
+  body{
+      background: url(../images/site/small_check.jpg);
+      background-size:cover;
+      background-repeat:repeat-y;
+      font-family: 'Fredoka', sans-serif;
+      /* font-family: 'Rajdhani', sans-serif; */
+      max-width: 78%;
+      margin: 15px auto;
+  }
+  [id = cover_div]{
+      background-color: #ffffff;
+      margin: 20px 10px;
+      border: 4px solid #4c96d7;
+      border-radius: 7px;
+  }
+  #top_header{
+      display: flex;
+      align-items: center;
+      justify-content: space-around; 
+      margin: 7px; 
+  }
+  header a:nth-child(2){
+      color: black;
+      margin-right: 9px;
+      font-size: small;
+     
+  }
+  header a:nth-child(1){
+    font-size: larger;
+    color: #2c29c5;
+}
+header a:nth-child(1):hover{
+    color: red;
+    text-decoration: underline;
+}
+  header img{
+      width: 60%;
+      height: auto;
+  }
+  #nav_bar li a{
+    color: #ffffff;
+    font-size: 8.6px;
+  }
+ #nav_bar li{
+    color: white;
+    font-size: smaller;
+    padding: .5rem;
+    text-align:center;
+}
+ #nav_items_list{
+    display:flex;
+}
+#nav_items_list a{
+    display: block;
+}
+#nav_bar{
+      background-color: #3a3a3a;
+}
+#nav_bar li:hover,#nav_bar li a:hover{
+      background-color: #4c96d7;
+      color:black;
+}
+main h1{
+    margin: 15px 5px 15px 5px;
+    font-size: medium;
+}
+.errorMsg{
+    margin-left: 10px;
+    color: rgba(233, 6, 6, 0.582);
+    font-weight: bold;
+}
+.successMsg{
+    margin-left: 10px;
+    color: green;
+    font-weight: bold;
+}
+.vehicleMgnt li a{
+    margin: 30px;
+    color: black;
+    font-size: larger;
+}
+.vehicleMgnt li a:hover{
+    text-decoration: underline;
+    color: #2c29c5;
+    font-weight: bold;
+}
+.review_upgrade{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 10px;
+}
+
+
+
+.reviews p {
+    border: black solid 2px;
+    margin-top: 10px;
+}
+
+
+
+.upgrade_parts{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.upgrade_parts>figure{
+    text-align: center;
+    padding: 10px 5px;
+}
+.image_div{
+    background-color: #4c96d7;
+    padding: .2em 2em .2em 2em;
+}
+.upgrade_parts figure img{
+    width: 45px;
+    height: 60px;
+}
+#review_list li{
+    list-style-type: disc;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.review_area h2, .upgrade_wrapper h2{
+    margin-bottom: 10px;
+}
+.review_upgrade h2{
+    font-size: medium;
+}
+.review_area h2{
+    margin-top: 42px;
+}
+figcaption{
+    text-decoration: underline;
+    font-size: 67%;
+}
+.banner_image{
+    position: relative;
+    text-align: center;
+}
+#delorean-features{
+    position: absolute;
+    margin: 0 0 0 10px;
+    color: #4c96d7;
+    float: left;
+    text-align: left;
+    font-size: smaller;
+}
+#delorean-features h2{
+    font-size: small;
+}
+.banner_image img{
+    max-width: 90%;
+    max-height: 70%;
+    margin: 25px;
+}
+.own_today_button{
+    position: absolute;
+    align-self: center;
+    margin-top: 135px;
+    max-width: 10em;
+    margin-left: 25px;
+}
+  footer{
+    text-align: center;
+    border-top: 3px solid #3a3a3a;
+    padding: 6px;
+    line-height: 25px;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    color: black;
+}
+[class = "err_msg"]{
+    margin: 15px;
+    color: black;
+}
+.form{
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+}
+.form fieldset{
+    border-radius: 10px;
+    color: #2c29c5;
+    margin: 1em 0;
+}
+label + input{
+    display: block;
+    clear: both;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: small;
+    padding-left: 5px;
+    transition: all 1s ease-in;
+}
+label + input:required:invalid{
+    border-left: 5px solid red;
+}
+label + input:required:valid{
+    border-left: 5px solid green;
+}
+.form fieldset > p{
+    margin: 3%;
+}
+legend{
+    text-align: right;
+    margin-right: 12px ;
+}
+[type = submit]{
+    border-radius: 20px;
+    width: 14em;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #7cb0df;
+    font-weight: bolder;
+    font-size: 1em;
+}
+[type = submit]:hover{
+    cursor: pointer;
+}
+.reglink{
+    text-align: center;
+    font-size: smaller;
+}
+.reglink a{
+    font-weight: bolder;
+    color:  #2c29c5;
+}
+p.required{
+    color: rgba(233, 6, 6, 0.582);
+    font-weight: bold;
+}
+[name="invDescription"]{
+    width:80%
+}
+.spanInfo{
+    font-size: smaller;
+    color: black;
+}
+[class='loginUser']{
+    margin:10px;
+}
+[class='loginUser'] li{
+    margin: 6px 0 5px 20px;
+}
+a.loginUser{
+    margin: 6px 0 5px 30px;
+    color: #2c29c5;
+    font-weight: bold;
+}
+a.loginUser:hover{
+    text-decoration: underline;
+    color: #4c96d7;
+    font-weight: bolder;
+}
+
+/* Table styleing */
+table{
+    margin:15px
+}
+td{
+    padding-left: 8px;
+}
+[class='tableDiv']{
+    margin-left: 15px;
+}
+
+#inv-display{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   #inv-display li{
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+   }
+   
+   #inv-display li img {
+       max-width: 100%;
+       /* max-height: 100%; */
+   }
+   [class='vehicleDetails']{
+       display: flex;
+       flex-direction: column;
+   }
+   .imgDiv, .infoDiv{
+    padding: 0 12px 0 12px;
+}
+.infoDiv p{
+    margin: 20px 0 20px 14px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.imgDiv figure img{
+    max-width: 100%;
+    border-radius: 6px;
+}
+.imgDiv figcaption{
+    font-size: larger;
+    text-decoration: none;
+    padding: 20px;
+    color: #033158;
+}
+.infoDiv{
+    max-width: 100%;
+    height: auto;
+    margin-top: 7px;
+}
+.infoDiv p:nth-child(even){
+    background-color: #cfddeb;
+}
+[class="vehicleImg"]{
+    margin: 15px;
+}
+input[type='radio']{
+    align-items: center;
+    display: inline;
+    width: 20px;
+    height: auto;
+    margin-top: -30px;
+}
+[id="image-display"]{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+[id="image-display"] img{
+    max-width: 90%;
+    width: auto;
+    margin-bottom: 3px;
+}
+[id="image-display"] p{
+    margin-bottom: 15px;
+}
+hr{
+    font-weight: 100;
+}
+[class='thumbnailImg']{
+    margin: 5px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    order: 3;
+}
+.infoDiv::after{
+    content: 'Other Images';
+    font-weight: bolder;
+    font-size: larger;
+}
+[class='thumbnailImg'] img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+[alt='search icon']{
+    max-width: 20%;
+    height: auto;
+    margin: 0 0 0 5px;
+}
+[class='container']{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+}
+[class='search-form']{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    align-items: center;
+}
+[class='search-form'] [type="search"]{
+    width: 56%;
+    height: 40px;
+}
+[class='search-form'] label{
+    color: #2c29c5;
+    font-weight: bold;
+}
+h2[class='displayResult']{
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(231, 230, 230);
+    padding: 0.6em;
+    max-width: 60%;
+}
+[class='searchList']{
+    margin: 10px 0 20px 25px;
+    max-width: 70%;
+}
+[class='vehicleImgDesc']{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 8px 0 25px 0;
+}
+.vehicleImgDesc img{
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+/* ----------For Large Screens------------- */
+
+@media screen and (min-width:768px){
+    .review_upgrade{
+        display: flex;
+        flex-direction:row-reverse;
+        margin: 20px;
+    }
+    #delorean-features{
+        float: left;
+        text-align: left;
+    }
+    .own_today_button{
+        position: absolute;
+        float: left;
+        margin-top: 140px;
+        max-width: 10em;
+        margin-left: -85px;
+    }
+    #review_list li{
+        list-style-type: disc;
+        letter-spacing: 2.5px;
+        line-height: 30px;
+        margin-left: 20px;
+        font-size: smaller;
+    }
+    #top_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+    }
+    header a:nth-child(2){
+        margin-right: 15px;
+        font-size: larger;
+    }
+    header img{
+        width: 100%;
+        height: auto;
+    }
+    #nav_bar li a{
+      color: #ffffff;
+      font-size: 18px;
+    }
+    .image_div{
+        background-color: #4c96d7;
+        padding: .5em 6em .2em 6em;
+    }
+    figcaption{
+        font-size: 16px;
+    }
+    #review_area h2{
+        margin-top: 0;
+    }
+    main h1{
+        font-size: 30px;
+    }
+    #delorean-features{
+        position: absolute;
+        margin-left: 35px;
+        color: #4c96d7;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #delorean-features h2{
+        font-size: larger;
+    }
+    #delorean-features p{
+        color: #033158;
+    }
+    .banner_image img{
+        max-width: 90%;
+        max-height: 70%;
+        margin: 5px;
+    }
+    .review_upgrade h2{
+        font-size: larger;
+    }
+    [class = "err_msg"]{
+        margin: 15px;
+        color: black;
+        font-weight: bold;
+    }
+    label + input{
+        width: 40%;
+        height: 40px;
+        font-size: larger;
+    }
+    legend{
+        text-align: center;
+    }
+    [type = submit]{
+        width: 10em;
+        font-size: 1em;
+    }
+    .reglink{
+        font-size: large;
+    }
+    [name="invDescription"]{
+        width:40%
+    }
+    /* For vehicle display in classification view */
+	#inv-display {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	#inv-display h2{
+		font-size: 1rem;
+        margin: 0 4px 0 4px;
+	}
+	#inv-display li {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	#inv-display div {
+		width: 100%;
+	}
+    [class='vehicleDetails']{
+        display: flex;
+        flex-direction: row;
+    } 
+    [id="image-display"]{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    [class='thumbnailImg'] li:hover{
+        overflow: visible;
+        transform: scale(2.5);
+        z-index: 2;
+    }
+    [class='thumbnailImg']{
+        display: flex;
+        flex-direction:column;
+        order: 1;
+    }
+    [class='thumbnailImg']::before{
+        content: '';
+    }
+    .imgDiv{
+        order: 2;
+    }
+    .infoDiv{
+        order: 3;
+    }
+    [class='thumbnailImg'] img{
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+    }
+    [class='thumbnailImg'] li{
+        transition: 0.4s;
+    }
+    .infoDiv::after{
+        content: '';
+    }
+    [alt='search icon']{
+        max-width: 2em;
+        height: auto;
+        margin: 0 0 0 5px;
+    }
+
+}
